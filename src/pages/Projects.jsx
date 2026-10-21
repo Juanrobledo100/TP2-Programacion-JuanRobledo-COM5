@@ -1,23 +1,6 @@
 import ProjectCard from "../Components/ProjectCard";
+import { misProyectos } from "../data/Projects";
 
-const misProyectos = [
-  {
-    id: "gastos",
-    nombre: "Control de gastos compartidos",
-    resumen:
-      "App para registrar gastos entre roomies y tener un resumen claro de lo que cada uno debe al final del mes.",
-    hechoCon: ["React", "useState", "UI"],
-    repo: "https://github.com/juanrobledo/gastos-compartidos",
-  },
-  {
-    id: "clima",
-    nombre: "Clima Tucumán",
-    resumen:
-      "App que consume una API pública para mostrar el pronóstico semanal y practicar fetching y renderizado de listas.",
-    hechoCon: ["React", "Fetch API", "CSS"],
-    repo: "https://github.com/juanrobledo/clima-tucuman",
-  },
-];
 
 function Projects() {
   return (
