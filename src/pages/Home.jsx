@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Hero({ nombre, rol }) {
+function Home({ nombre, rol }) {
   const [abierta, setAbierta] = useState(false);
 
   return (
@@ -70,4 +70,4 @@ function Hero({ nombre, rol }) {
   );
 }
 
-export default Hero;
+export default Home;

@@ -1,8 +1,8 @@
 import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <Hero nombre={nombre} rol={rol} />
+      <Home nombre={nombre} rol={rol} />
       <About />
       <Skills />
       <Projects />
