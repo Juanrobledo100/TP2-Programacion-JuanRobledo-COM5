@@ -11,10 +11,10 @@ const enlaces = [
 
 function Sidebar({ nombre }) {
   return (
-    <aside className="app-sidebar bg-body-tertiary">
+    <aside className="app-sidebar bg-info text-white">
       <div className="sticky-md-top p-4">
         <h1 className="h3 fw-bold mb-1">{nombre}</h1>
-        <p className="text-body-secondary mb-4">Portfolio personal</p>
+        <p className="text-white-50 mb-4">Portfolio personal</p>
 
         <nav className="nav nav-pills flex-md-column gap-2">
           {enlaces.map((enlace) => (
@@ -22,7 +22,7 @@ function Sidebar({ nombre }) {
               key={enlace.to}
               to={enlace.to}
               end={enlace.to === "/"}
-              className="nav-link"
+              className="nav-link text-white"
             >
               {enlace.texto}
             </NavLink>
