@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./Components/Sidebar";
-import Header from "./Components/Header";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,12 +14,10 @@ function App() {
   const rol = "Programador Full Stack, Ciberseguridad, estudiante de programación";
 
   return (
-    <div className="container-fluid">
-      <div className="row min-vh-100">
-
+    <div className="app-layout">
         <Sidebar nombre={nombre} />
 
-        <div className="col-12 col-md-8 d-flex flex-column p-0">
+        <div className="app-main">
           <Header rol={rol} />
 
           <main className="flex-grow-1">
@@ -33,7 +32,6 @@ function App() {
 
           <Footer nombre={nombre} />
         </div>
-      </div>
     </div>
   );
 }

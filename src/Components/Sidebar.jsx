@@ -11,7 +11,7 @@ const enlaces = [
 
 function Sidebar({ nombre }) {
   return (
-    <aside className="col-12 col-md-4 bg-body-tertiary border-end">
+    <aside className="app-sidebar bg-body-tertiary">
       <div className="sticky-md-top p-4">
         <h1 className="h3 fw-bold mb-1">{nombre}</h1>
         <p className="text-body-secondary mb-4">Portfolio personal</p>

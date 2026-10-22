@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Home({ nombre, rol }) {
@@ -21,12 +22,18 @@ function Home({ nombre, rol }) {
             </p>
 
             <div className="d-flex flex-wrap gap-3 mb-4">
-              <a href="#projects" className="btn btn-primary btn-lg rounded-pill portfolio-btn-primary">
+              <Link
+               to="/projects"
+               className="btn btn-primary btn-lg rounded-pill portfolio-btn-primary"
+              >
                 Ver proyectos
-              </a>
-              <a href="#contact" className="btn btn-outline-light btn-lg rounded-pill">
+              </Link>
+              <Link 
+              to="/contact" 
+              className="btn btn-outline-light btn-lg rounded-pill"
+              >
                 Contactame
-              </a>
+              </Link>
             </div>
 
             <button

@@ -1,0 +1,27 @@
+.app-layout {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  min-width: 0;
+  border-right: 1px solid var(--bs-border-color);
+}
+
+.app-main {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+@media (max-width: 767.98px) {
+  .app-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--bs-border-color);
+  }
+}

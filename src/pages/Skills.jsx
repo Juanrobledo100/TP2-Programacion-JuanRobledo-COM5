@@ -1,4 +1,4 @@
-import SkillCard from "../Components/SkillCard";
+import SkillCard from "../components/SkillCard";
 import { skills } from "../data/Skills";
 
 function Skills() {
